@@ -6,7 +6,7 @@
     <title>HappyEnd - Em Breve</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+   <body>
     <!-- Menu de Navegação -->
     <nav class="navbar" id="navbar">
       <ul class="nav-menu" id="navMenu">
@@ -25,6 +25,7 @@
       </ul>
       <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
     </nav>
+
     <!-- Partículas -->
     <div class="particles" id="particles"></div>
 
@@ -38,7 +39,7 @@
     <div class="spotlight spotlight-2"></div>
 
     <!-- Seção 1: Frase introdutória -->
-    <section class="section">
+    <section class="section" id="inicio">
       <div class="intro-text" id="introText">E com vocês nosso projeto...</div>
     </section>
 
@@ -71,6 +72,66 @@
       </div>
     </section>
 
+    <!-- Seção 4: Carrossel de Projetos -->
+    <section class="section" id="projetos">
+      <div class="carousel-section">
+        <div class="carousel-container" id="carouselContainer">
+          <div class="carousel-wrapper">
+            <div class="carousel-slide active" data-project="0">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" alt="Projeto de Tecnologia">
+              <div class="carousel-overlay">
+                <h3>Inovação Tecnológica</h3>
+              </div>
+            </div>
+            <div class="carousel-slide" data-project="1">
+              <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=600&h=400&fit=crop" alt="Projeto Sustentável">
+              <div class="carousel-overlay">
+                <h3>Sustentabilidade</h3>
+              </div>
+            </div>
+            <div class="carousel-slide" data-project="2">
+              <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop" alt="Projeto Social">
+              <div class="carousel-overlay">
+                <h3>Impacto Social</h3>
+              </div>
+            </div>
+            <div class="carousel-slide" data-project="3">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Projeto Industrial">
+              <div class="carousel-overlay">
+                <h3>Automação Industrial</h3>
+              </div>
+            </div>
+            <div class="carousel-slide" data-project="4">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop" alt="Projeto de Saúde">
+              <div class="carousel-overlay">
+                <h3>Saúde e Bem-estar</h3>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-arrows carousel-prev" onclick="changeSlide(-1)">‹</button>
+          <button class="carousel-arrows carousel-next" onclick="changeSlide(1)">›</button>
+        </div>
+
+        <div class="carousel-nav">
+          <div class="nav-dot active" onclick="goToSlide(0)"></div>
+          <div class="nav-dot" onclick="goToSlide(1)"></div>
+          <div class="nav-dot" onclick="goToSlide(2)"></div>
+          <div class="nav-dot" onclick="goToSlide(3)"></div>
+          <div class="nav-dot" onclick="goToSlide(4)"></div>
+        </div>
+
+        <div class="carousel-info-card" id="carouselInfoCard">
+          <h3 id="cardTitle">Inovação Tecnológica</h3>
+          <p id="cardDescription">
+            Projetos focados em desenvolver soluções tecnológicas inovadoras que transformam 
+            a maneira como interagimos com o mundo digital. Nossos alunos criaram aplicativos, 
+            sistemas web e ferramentas que solucionam problemas reais do cotidiano, 
+            demonstrando criatividade e domínio técnico.
+          </p>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
